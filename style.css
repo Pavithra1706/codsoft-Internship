@@ -1,0 +1,306 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.topnav {
+  background-color: #222;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+.topnav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topnav nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.topnav nav a:hover {
+  color: #ffa726;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(to right, #c8e6c9, #43a047);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 80px 20px;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.hero-content h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #e65100;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* CALCULATOR SPECIFIC BODY */
+body.calculator-body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* CENTER WRAPPER */
+.center-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* CALCULATOR STYLES */
+.calculator-container {
+  text-align: center;
+}
+
+.calculator-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.calculator {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  height: 60px;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0f7fa;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+}
+
+.operator {
+  background-color: #ffb74d;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #ffa726;
+}
+
+.clear {
+  background-color: #ef5350;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #e53935;
+}
+
+.equals {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.equals:hover {
+  background-color: #43a047;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fff3e0);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #00695c;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skills li {
+  background-color: #00838f;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.projects .project {
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.resume .download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #004d40;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.resume .download-btn:hover {
+  background-color: #00251a;
+}
+
+.contact p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
